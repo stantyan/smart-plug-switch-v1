@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="SmartPlugSwitch" customModuleProvider="target">
+            <connections>
+                <outlet property="statusMenu" destination="U1i-df-HAW" id="Mlt-zC-LaO"/>
+            </connections>
+        </customObject>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu id="U1i-df-HAW">
+            <items>
+                <menuItem title="Bathroom Fan" id="mzz-uS-kXU">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Bathroom Fan" id="ZNa-xB-mff">
+                        <items>
+                            <menuItem title="On" id="H09-Ty-fnD">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="onBathroomFan:" target="Voe-Tx-rLC" id="vWG-vt-Awc"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Off" id="Qds-eN-r43">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="offBathroomFan:" target="Voe-Tx-rLC" id="pNf-0G-8zx"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Kitchen LED" id="Tlf-f6-X4y">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Kitchen LED" id="2Qb-UG-Eok">
+                        <items>
+                            <menuItem title="On" id="UC8-vs-eGe">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="onKitchenLED:" target="Voe-Tx-rLC" id="t6r-D0-33n"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Off" id="7Rn-8w-7Xw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="offKitchenLED:" target="Voe-Tx-rLC" id="gqX-mF-r5Q"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Movie Lights" id="Gwh-cv-JwE">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Movie Lights" id="qPt-WG-nOS">
+                        <items>
+                            <menuItem title="On" id="kL9-SJ-pYS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="onMovieLights:" target="Voe-Tx-rLC" id="sEC-XB-VWg"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Off" id="dwW-Kp-8ps">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="offMovieLights:" target="Voe-Tx-rLC" id="TPS-pD-Mnb"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Water Heater" id="0nq-km-Rp3">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Water Heater" id="Cgw-Sw-bHf">
+                        <items>
+                            <menuItem title="On" id="DeY-vk-cAV">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="onWaterHeater:" target="Voe-Tx-rLC" id="PM1-CQ-l0N"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Off" id="eWN-nd-7uP">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="offWaterHeater:" target="Voe-Tx-rLC" id="daW-SG-Nox"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Hot Water" id="Q24-Yg-enu">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Hot Water" id="fxO-SL-b9h">
+                        <items>
+                            <menuItem title="On" id="aPp-2B-sQV">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="onHotWater:" target="Voe-Tx-rLC" id="Ksq-jV-F4e"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Off" id="jAi-9h-AIu">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="offHotWater:" target="Voe-Tx-rLC" id="WTy-Pb-P2h"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Christmas" id="AA9-0D-Hhx">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Christmas" id="xjD-jy-bo0">
+                        <items>
+                            <menuItem title="On" id="Zat-8C-jg8">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="onChristmas:" target="Voe-Tx-rLC" id="xPE-jO-vVu"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Off" id="UY3-b4-WLf">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="offChristmas:" target="Voe-Tx-rLC" id="yA8-ET-Qvu"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Quit" id="gOj-CK-F7y">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quitClicked:" target="Voe-Tx-rLC" id="yFb-ic-Z6P"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="116" y="150.5"/>
+        </menu>
+    </objects>
+</document>
